@@ -35,11 +35,6 @@
   }
 }
 
-/*.grid-card {
-  display:  grid;
-  grid-template-rows: 6fr 1fr;
-}*/
-
 .grid-card {
   display:  flex;
   flex-direction:  column;
