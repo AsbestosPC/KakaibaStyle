@@ -1,3 +1,16 @@
+:root {
+  --dark-background: #00aaff;
+  --light-bacgkround: white;
+}
+
+body.dark {
+  background-color: #00aaff;
+}
+
+body.light {
+  background-color: white;
+}
+
 .character-container {
   display: grid;
   justify-items: center;
