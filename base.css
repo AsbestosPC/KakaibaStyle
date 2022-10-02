@@ -13,19 +13,25 @@ body.light {
   background-color: white;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .character-container {
   display: grid;
   justify-items: center;
+  flex-grow: 1;
+  padding-bottom: 1rem;
 }
 
 .responsive {
   height: auto;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 @media (min-width: 728px) {
@@ -62,10 +68,9 @@ body.light {
   margin-bottom: 0;
 }
 
-span > h1 {
-  text-align:  left;
-  margin-top: 0.5rem;
+span > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
   margin-bottom: 0;
-  margin-left: 1rem;
-  background-color: red;
 }
