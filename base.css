@@ -27,7 +27,7 @@ body {
   display: grid;
   justify-items: center;
   flex-grow: 1;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .responsive {
