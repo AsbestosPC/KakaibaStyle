@@ -73,7 +73,6 @@ span > div {
 .character-container {
   display: grid;
   justify-items: center;
-  flex-grow: 1;
   margin-bottom: 1rem;
 }
 
@@ -97,6 +96,10 @@ span > div {
   width: 100%;
 }
 
+.wrapper {
+  width: 90%;
+}
+
 @media (max-width: 650px), 
 (min-resolution: 124.8dpi) {
   .character-container {
@@ -118,6 +121,10 @@ span > div {
 
   .name-css {
     font-size: 1.2em;
+  }
+
+  .wrapper {
+    width: 100%;
   }
 
   header {
@@ -154,6 +161,9 @@ span > div {
     width: 100%;
     max-width: 250px;
   }
+  .wrapper {
+    width: 95%;
+  }
 }
 
 @media (min-width: 850px) {
@@ -165,6 +175,10 @@ span > div {
   .responsive {
     width: 100%;
     max-width: 300px;
+  }
+
+  .wrapper {
+    width: 95%;
   }
 }
 
