@@ -37,7 +37,7 @@ header {
   margin-top: -20px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: baseline;
   gap: 2rem;
 
@@ -45,13 +45,17 @@ header {
 }
 
 header.light {
-  background: radial-gradient(ellipse at top, #05D6D9, transparent),
-  radial-gradient(ellipse at bottom, #F9EA8F, transparent);
+  /* background: radial-gradient(ellipse at top, #05D6D9, transparent),
+  radial-gradient(ellipse at bottom, #F9EA8F, transparent); */
+  background: linear-gradient(to bottom, #05D6D9, transparent),
+  radial-gradient(ellipse at center, #F9EA8F, transparent);
 }
 
 header.dark {
-  background: radial-gradient(ellipse at top, #FE5858, transparent),
-  radial-gradient(ellipse at bottom, transparent, #EE9617);
+  /* background: radial-gradient(ellipse at top, #FE5858, transparent),
+  radial-gradient(ellipse at bottom, transparent, #EE9617); */
+  background: linear-gradient(to bottom, #FE5858, transparent),
+  radial-gradient(ellipse at center, #EE9617, transparent);
 }
 
 header > nav {
@@ -60,6 +64,23 @@ header > nav {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 span > div {
@@ -76,7 +97,15 @@ footer {
   margin-top: 1.8rem;
 }
 
-.site-title {
+.logo {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+
   padding-left: 3rem;
 }
 
@@ -122,7 +151,7 @@ footer {
     max-width: 100%;
   }
 
-  .site-title {
+  .logo {
     font-size: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0.33em;
@@ -152,9 +181,9 @@ footer {
     gap: 10px;
     margin-bottom: 0.33em;
   }
-  h4 {
+  li a{
     margin: 0.2rem 0 0.5rem 0;
-    padding: 0;
+    padding: 0 0.5rem 0 0.5rem ;
   }
 
   label {
