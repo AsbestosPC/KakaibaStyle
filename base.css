@@ -88,6 +88,24 @@ span > div {
   flex-direction:  column;
 }
 
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse; 
+}
+
+tr {
+  border: 1px solid gray;
+}
+
+th, td {
+  border: 1px solid gray;
+}
+
+td {
+  text-align: center;
+}
+
 footer {
   width: 100%;
   border-top: solid black 1px;
@@ -135,6 +153,31 @@ footer {
   width: 100%;
 }
 
+.savior-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 25% 1fr;
+  background-color: rebeccapurple;
+  width: 85%;
+  margin: auto;
+}
+
+.savior-main > h1 {
+  grid-column: 2 / span 1;
+  text-align: center;
+}
+
+.savior-img {
+  grid-column: 1 / span 1;
+
+  height: auto;
+  width: 100%;
+}
+
+.profile-table {
+  grid-column: 2 / span 2;
+}
+
 .wrapper {
   width: 90%;
 }
@@ -164,6 +207,11 @@ footer {
 
   .wrapper {
     width: 100%;
+  }
+
+  .savior-main {
+    display: flex;
+    flex-direction: column;
   }
 
   header {
@@ -201,6 +249,11 @@ footer {
     width: 100%;
     max-width: 250px;
   }
+  .savior-main {
+    display: flex;
+    flex-direction: column;
+  }
+
   .wrapper {
     width: 95%;
   }
@@ -216,7 +269,14 @@ footer {
     width: 100%;
     max-width: 300px;
   }
-
+  .savior-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 25% 1fr;
+    background-color: rebeccapurple;
+    width: 85%;
+    margin: auto;
+  }
   .wrapper {
     width: 95%;
   }
@@ -227,6 +287,14 @@ footer {
     width: 90%;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .savior-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 25% 1fr;
+    background-color: rebeccapurple;
+    width: 85%;
+    margin: auto;
   }
   .responsive {
     width: 100%;
