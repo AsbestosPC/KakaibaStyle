@@ -169,8 +169,13 @@ footer {
 }
 
 .savior-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.savior-wrapper {
   grid-column: 1 / span 1;
-  width: 300px;
 }
 
 .profile-table {
@@ -211,10 +216,7 @@ footer {
   .savior-main {
     display: flex;
     flex-direction: column;
-  }
-
-  .savior-img {
-    width: auto;
+    align-items: center;
   }
 
   header {
@@ -263,7 +265,7 @@ footer {
     width: 85%;
     margin: auto;
   }
-  .savior-img {
+  .savior-wrapper {
     grid-column: 1 / span 1;
     width: 300px;
   }
@@ -291,9 +293,9 @@ footer {
     width: 85%;
     margin: auto;
   }
-  .savior-img {
+  .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 300px;
+    width: 450px;
   }
   .wrapper {
     width: 95%;
@@ -314,9 +316,9 @@ footer {
     width: 85%;
     margin: auto;
   }
-  .savior-img {
+  .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 300px;
+    width: 450px;
   }
   .responsive {
     width: 100%;
