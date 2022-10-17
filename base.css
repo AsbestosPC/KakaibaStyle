@@ -267,7 +267,6 @@ footer {
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 300px;
   }
 
   .wrapper {
@@ -295,7 +294,6 @@ footer {
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 450px;
   }
   .wrapper {
     width: 95%;
@@ -318,7 +316,6 @@ footer {
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 450px;
   }
   .responsive {
     width: 100%;
