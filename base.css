@@ -156,12 +156,13 @@ footer {
 .savior-main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% 650px 1fr;
+  grid-template-rows: 10% 1fr 1fr auto;
 
   background-color: rebeccapurple;
 
   margin: auto;
   justify-items: center;
+  padding: 0.5rem;
 }
 
 .savior-main > h1 {
@@ -176,6 +177,7 @@ footer {
 
 .savior-wrapper {
   grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
 }
 
 .profile-table {
@@ -260,14 +262,14 @@ footer {
   .savior-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 25% 1fr;
+    grid-template-rows: 10% 1fr 1fr;
     background-color: rebeccapurple;
-    width: 85%;
+    width: 90%;
     margin: auto;
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 300px;
+    min-width: 300px;
   }
 
   .wrapper {
@@ -288,14 +290,14 @@ footer {
   .savior-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 25% 1fr;
+    grid-template-rows: 10% 1fr 1fr;
     background-color: rebeccapurple;
-    width: 85%;
+    width: 80%;
     margin: auto;
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 100%;
+    min-width: 300px;
   }
   .wrapper {
     width: 95%;
@@ -311,14 +313,14 @@ footer {
   .savior-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 25% 1fr;
+    grid-template-rows: 10% 337px 337px 1fr;
     background-color: rebeccapurple;
-    width: 85%;
+    width: 75%;
     margin: auto;
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    width: 100%;
+    min-width: 300px;
   }
   .responsive {
     width: 100%;
