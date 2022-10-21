@@ -260,17 +260,14 @@ footer {
     max-width: 250px;
   }
   .savior-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 1fr 1fr;
-    background-color: rebeccapurple;
-    width: 90%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .savior-wrapper {
+  /* .savior-wrapper {
     grid-column: 1 / span 1;
     min-width: 300px;
-  }
+  } */
 
   .wrapper {
     width: 95%;
@@ -290,14 +287,14 @@ footer {
   .savior-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 1fr 1fr;
+    grid-template-rows: 10% 275px 275px 1fr;
     background-color: rebeccapurple;
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    min-width: 300px;
+    min-width: 350px;
   }
   .wrapper {
     width: 95%;
@@ -315,12 +312,12 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 337px 337px 1fr;
     background-color: rebeccapurple;
-    width: 75%;
+    width: 65%;
     margin: auto;
   }
   .savior-wrapper {
     grid-column: 1 / span 1;
-    min-width: 300px;
+    min-width: 400px;
   }
   .responsive {
     width: 100%;
