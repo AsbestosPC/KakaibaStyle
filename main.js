@@ -1,22 +1,50 @@
-let darkMode = false
+let darkModeEnbaled = false
+
+function darkMode() {
+	let x = document.getElementsByClassName("light")
+
+	while(x.length > 0) {
+		x[0].className = "dark";  
+	}
+}
+
+function lightMode() {
+	x = document.getElementsByClassName("dark")
+
+	while(x.length > 0) {
+		x[0].className = "light";  
+	}
+}
 
 function changeDarkMode() {
-	darkMode = !darkMode
+	darkModeEnbaled = !darkModeEnbaled
 
-	if (darkMode) {
+	if (darkModeEnbaled) {
 		// document.body.classList.remove("light")
 		// document.body.classList.add("dark")
 
 		// document.getElementById("header").classList.remove("light");
 		// document.getElementById("header").classList.add("dark");]
 
-		document.querySelectorAll('.light').forEach(e => e.classList.replace('light', 'dark'))
+		// document.querySelectorAll('.light').forEach(e => e.classList.replace('light', 'dark'))
+		darkMode();
+		console.log("Changed to dark")
 	}
 	else {
-		document.body.classList.remove("dark")
-		document.body.classList.add("light")
+		lightMode()
+		console.log("Changed to light")
+	}
 
-		document.getElementById("header").classList.remove("dark");
-		document.getElementById("header").classList.add("light");
+	localStorage.setItem("dark-mode", darkModeEnbaled);
+	console.log("Set to: " + localStorage.getItem("dark-mode"))
+}
+
+function checkDarkMode() {
+	console.log(localStorage.getItem("dark-mode"))
+	if (localStorage.getItem("dark-mode")) {
+		darkMode()
+	}
+	else {
+		lightMode()
 	}
 }
