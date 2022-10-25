@@ -41,7 +41,7 @@ function changeDarkMode() {
 
 function checkDarkMode() {
 	console.log(localStorage.getItem("dark-mode"))
-	if (localStorage.getItem("dark-mode")) {
+	if (localStorage.getItem("dark-mode") == "true") {
 		darkMode()
 	}
 	else {
