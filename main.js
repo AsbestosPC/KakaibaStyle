@@ -17,6 +17,9 @@ function lightMode() {
 }
 
 function changeDarkMode() {
+	if (localStorage.getItem("dark-mode") == "true") {
+		darkModeEnbaled = true
+	}
 	darkModeEnbaled = !darkModeEnbaled
 
 	if (darkModeEnbaled) {
