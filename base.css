@@ -5,6 +5,11 @@
   --light-bacgkround: white;
 }
 
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
+}
+
 body.dark {
   background-color: #1b1b1b;
 }
@@ -95,6 +100,10 @@ q {
   font-weight: bold;
   font-style: italic;
 }
+
+/* hr {
+  border-top: 5px solid red;
+} */
 
 table {
   width: 100%;
@@ -206,6 +215,18 @@ footer {
 
 .profile-table {
   grid-column: 2 / span 2;
+}
+
+.section-title {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.section-title > h2 {
+  padding: 1rem 0 0 1rem;
+  margin: 0;
+  border-bottom: 1px solid #a2a9b1;
+  overflow: hidden;
 }
 
 .wrapper {
