@@ -23,6 +23,14 @@ body.light {
   background-color: white;
 }
 
+.savior-main.dark {
+  color: #FAF9F6;
+}
+
+.savior-main.light {
+  color: #1b1b1b;
+}
+
 html, body {
   margin: 0;
   padding: 0;
