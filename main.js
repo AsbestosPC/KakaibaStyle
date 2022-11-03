@@ -1,19 +1,37 @@
 let darkModeEnbaled = false
 
 function darkMode() {
-	let x = document.getElementsByClassName("light")
+	// let elements = document.getElementsByClassName("light")
 
-	while(x.length > 0) {
-		x[0].className = "dark";  
-	}
+	// for(var i = 0; i < elements.length; i++)
+	// {
+	// 	console.log(i);
+    // 	elements[i].classList.add('dark');
+    // 	elements[i].classList.remove('light');
+	// }
+
+	let elements = document.querySelectorAll('.light')
+	elements.forEach( x => {
+		x.classList.add('dark');
+		x.classList.remove('light');
+	})
 }
 
 function lightMode() {
-	x = document.getElementsByClassName("dark")
+	// let elements = document.getElementsByClassName("dark")
 
-	while(x.length > 0) {
-		x[0].className = "light";  
-	}
+	// for(var i = 0; i < elements.length; i++)
+	// {
+	// 	console.log(i)
+    // 	elements[i].classList.add('light');
+    // 	elements[i].classList.remove('dark');
+	// }
+
+	let elements = document.querySelectorAll('.dark')
+	elements.forEach( x => {
+		x.classList.add('light');
+		x.classList.remove('dark');
+	})
 }
 
 function changeDarkMode() {
