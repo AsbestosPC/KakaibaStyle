@@ -235,7 +235,7 @@ footer {
 }
 
 .wrapper {
-  width: 90%;
+  width: 85%;
 }
 
 @media (max-width: 650px), 
@@ -319,12 +319,12 @@ footer {
     min-width: 300px;
   } */
 
-  .wrapper {
+  /* .wrapper {
     width: 95%;
-  }
+  } */
 }
 
-@media (min-width: 850px) {
+@media (min-width: 950px) {
   .character-container {
     width: 95%;
     margin: auto;
@@ -345,16 +345,16 @@ footer {
     grid-column: 1 / span 1;
     min-width: 350px;
   }
-  .wrapper {
+  /* .wrapper {
     width: 95%;
-  }
+  } */
 
   table {
     line-height: 1.75;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .character-container {
     width: 90%;
     margin: auto;
