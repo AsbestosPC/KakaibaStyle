@@ -224,7 +224,6 @@ footer {
 
 .section {
   grid-column: span 3;
-  width: 95%;
 }
 
 .section > h2 {
