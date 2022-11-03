@@ -5,9 +5,9 @@
   --light-bacgkround: white;
 }
 
-p {
-  font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  /* font-size: 15px; */
+  font-family: sans-serif;
 }
 
 a {
@@ -104,6 +104,7 @@ q {
   font-size: 1.3rem;
   font-weight: bold;
   font-style: italic;
+  padding: 1rem;
 }
 
 /* hr {
@@ -191,6 +192,7 @@ footer {
 .savior-title {
   grid-column: 1 / span 3;
   text-align: center;
+  padding-bottom: 1rem;
   /* font-size: 4rem;
   padding: 0;
   margin: 0; */
@@ -224,6 +226,7 @@ footer {
 
 .section {
   grid-column: span 3;
+  margin-top: 0.5rem;
 }
 
 .section > h2 {
