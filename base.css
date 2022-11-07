@@ -1,5 +1,4 @@
 body {
-  /* font-size: 15px; */
   font-family: sans-serif;
 }
 
@@ -22,14 +21,6 @@ label.dark {
 
 label.light {
   color: 1b1b1b;
-}
-
-.savior-main.dark {
-  color: #FAF9F6;
-}
-
-.savior-main.light {
-  color: #1b1b1b;
 }
 
 html, body {
@@ -64,15 +55,11 @@ header {
 }
 
 header.light {
-  /* background: radial-gradient(ellipse at top, #05D6D9, transparent),
-  radial-gradient(ellipse at bottom, #F9EA8F, transparent); */
   background: linear-gradient(to bottom, #05D6D9, transparent),
   radial-gradient(ellipse at center, #F9EA8F, transparent);
 }
 
 header.dark {
-  /* background: radial-gradient(ellipse at top, #FE5858, transparent),
-  radial-gradient(ellipse at bottom, transparent, #EE9617); */
   background: linear-gradient(to bottom, #FE5858, transparent),
   radial-gradient(ellipse at center, #EE9617, transparent);
 }
@@ -116,9 +103,17 @@ q {
   padding: 1rem;
 }
 
-/* hr {
-  border-top: 5px solid red;
-} */
+section {
+  grid-column: span 3;
+  margin-top: 0.5rem;
+}
+
+section > h2 {
+  padding: 1rem 0 0 0;
+  margin: 0;
+  border-bottom: 1px solid #a2a9b1;
+  overflow: hidden;
+}
 
 table {
   width: 100%;
@@ -160,7 +155,7 @@ footer {
   padding-left: 3rem;
 }
 
-.character-container {
+.character-list {
   display: grid;
   justify-items: center;
   margin-bottom: 1rem;
@@ -174,7 +169,7 @@ footer {
   padding: 5px;
 }
 
-.name-css {
+.card-name {
   background-color: green;
   font-weight: bold;
   font-size: 1.5em;
@@ -186,25 +181,13 @@ footer {
   width: 100%;
 }
 
-.section {
-  grid-column: span 3;
-  margin-top: 0.5rem;
-}
-
-.section > h2 {
-  padding: 1rem 0 0 0;
-  margin: 0;
-  border-bottom: 1px solid #a2a9b1;
-  overflow: hidden;
-}
-
 .wrapper {
   width: 85%;
 }
 
 @media (max-width: 650px), 
 (min-resolution: 124.8dpi) {
-  .character-container {
+  .character-list {
     width: 88%;
     margin: auto;
     grid-template-columns: 50% 50%;
@@ -221,7 +204,7 @@ footer {
     padding-left: 0;
   }
 
-  .name-css {
+  .card-name {
     font-size: 1.2em;
   }
 
@@ -231,7 +214,7 @@ footer {
 }
 
 @media (min-width: 650px) {
-  .character-container {
+  .character-list {
     width: 92%;
     margin: auto;
     grid-template-columns: 33% 33% 33%;
@@ -275,7 +258,7 @@ footer {
 }
 
 @media (min-width: 950px) {
-  .character-container {
+  .character-list {
     width: 95%;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -290,7 +273,7 @@ footer {
 }
 
 @media (min-width: 1300px) {
-  .character-container {
+  .character-list {
     width: 90%;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
