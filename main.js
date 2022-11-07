@@ -20,20 +20,17 @@ function lightMode() {
 function changeDarkMode() {
 	darkModeEnbaled = !darkModeEnbaled
 
+	if (darkModeEnbaled) {
 		darkMode();
-		console.log("Changed to dark")
 	}
 	else {
 		lightMode()
-		console.log("Changed to light")
 	}
 
 	localStorage.setItem("dark-mode", darkModeEnbaled);
-	console.log("Set to: " + localStorage.getItem("dark-mode"))
 }
 
 function checkDarkMode() {
-	console.log(localStorage.getItem("dark-mode"))
 	if (localStorage.getItem("dark-mode") == "true") {
 		darkMode()
 		darkModeEnbaled = true
