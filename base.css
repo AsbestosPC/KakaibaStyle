@@ -16,6 +16,14 @@ body.light {
   background-color: white;
 }
 
+label.dark {
+  color: #FAF9F6;
+}
+
+label.light {
+  color: 1b1b1b;
+}
+
 .savior-main.dark {
   color: #FAF9F6;
 }
