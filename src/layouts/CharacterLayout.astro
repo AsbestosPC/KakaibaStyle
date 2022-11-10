@@ -1,0 +1,34 @@
+---
+const { frontmatter }  = Astro.props;
+import SiteLayout from './SiteLayout.astro';
+import TableRow from '../components/TableRow.astro';
+
+import '../styles/characters.css';
+---
+
+<SiteLayout>
+  <main class="character-main light">
+        <div class="character-title">
+          <h1>{frontmatter.character}</h1>
+          <i>{frontmatter.title}</i>
+        </div>
+        <div class="character-img-wrapper">
+          <img src={frontmatter.image} class="character-img">
+        </div>
+        <q>Sometimes it don't be like that, but it do.</q>
+          <table class="profile-table">
+            <TableRow col1="Artist" col2={frontmatter.artist} />
+            <TableRow col1="Height" col2={frontmatter.height} />
+            <TableRow col1="Birthday" col2={frontmatter.birthday} />
+            <TableRow col1="Gender" col2={frontmatter.gender} />
+            <TableRow col1="Pronouns" col2={frontmatter.pronouns} />
+            <TableRow col1="Favorites" col2={frontmatter.favorites} />          
+            <TableRow col1="Likes" col2={frontmatter.likes} />
+            <TableRow col1="Dislikes" col2={frontmatter.dislikes} />
+            <TableRow col1="Preferred Sin" col2={frontmatter.sin} />
+          </table>
+        <section>
+          <slot />
+        </section>
+  </main>
+</SiteLayout>
