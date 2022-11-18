@@ -15,7 +15,7 @@ import '../styles/characters.css';
         <div class="character-img-wrapper">
           <img src={frontmatter.image} class="character-img">
         </div>
-        <q>Sometimes it don't be like that, but it do.</q>
+        <q>{frontmatter.quote}</q>
           <table class="profile-table">
             <TableRow col1="Artist" col2={frontmatter.artist} />
             <TableRow col1="Height" col2={frontmatter.height} />
