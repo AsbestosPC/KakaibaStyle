@@ -1,0 +1,19 @@
+---
+const { frontmatter }  = Astro.props;
+import SiteLayout from './SiteLayout.astro';
+import CharacterCard from '../components/CharacterCard.astro';
+
+const allCharacters = await Astro.glob('../pages/characters/*.md');
+
+import '../styles/global.css';
+---
+<SiteLayout>
+  <div class="character-list">
+    {allCharacters.map((post) => 
+        <CharacterCard thumbnail={post.frontmatter.thumbnail} 
+        url={post.url}
+        alt="some fella" 
+        charFirstName={post.frontmatter.firstName}
+    />)}
+  </div>
+</SiteLayout>
