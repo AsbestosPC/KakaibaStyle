@@ -1,8 +1,10 @@
 ---
 layout: ../../layouts/CharacterLayout.astro
 character: 'Poppy Mericano'
+firstName: 'Poppy'
 title: 'The Loud Mouse'
 image: ../../poppy.png
+thumbnail: ../../poppy-thumb.jpg
 quote: "It don't always be like that, but it do"
 artist: 'Lunwere'
 height: '160cm'
