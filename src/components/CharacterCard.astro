@@ -1,0 +1,14 @@
+---
+const {thumbnail} = Astro.props;
+const {alt} = Astro.props;
+const {charFirstName} = Astro.props;
+const {url} = Astro.props;
+---
+<a class="grid-card" href={url}>
+    <span>
+        <div>
+            <img src={thumbnail} alt={alt} class="responsive">
+            <p class="card-name">{charFirstName}</p>
+        </div>
+    </span>
+</a>
