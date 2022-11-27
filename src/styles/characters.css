@@ -13,7 +13,7 @@ q {
     font-weight: bold;
     font-style: italic;
     padding: 1rem;
-  }
+}
 
 table {
   width: 100%;
@@ -35,86 +35,45 @@ td {
 }
 
 .character-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 1fr 1fr auto;
-  
-    margin: auto;
-    justify-items: center;
-    padding: 0.5rem;
-}
-  
-.character-title {
-    grid-column: 1 / span 3;
-    text-align: center;
-    padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 1fr 1fr auto;
+
+  margin: auto;
+  justify-items: center;
+  padding: 0.5rem;
 }
   
-.character-title > h1 {
-    font-size: 3rem;
-    padding: 0;
-    margin: 0;
-}
-  
-.character-title > i {
-    font-size: 1.5rem;
-    margin-top: -0.5rem;
-}
-  
-.character-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-  
-.character-img-wrapper {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
-}
-  
-.profile-table {
-    grid-column: 2 / span 2;
-}
-
-@media (max-width: 650px), 
-(min-resolution: 124.8dpi) {
-  .character-container {
-    width: 88%;
-    margin: auto;
-    grid-template-columns: 50% 50%;
-  }
-
-  .responsive {
-    max-width: 100%;
-  }
-
-  .logo {
-    font-size: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.33em;
-    padding-left: 0;
-  }
-
-  .name-css {
-    font-size: 1.2em;
-  }
-
-  .wrapper {
-    width: 100%;
-  }
-
-  .character-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-}
-
 .character-title {
   grid-column: 1 / span 3;
   text-align: center;
   padding-bottom: 1rem;
+}
+  
+.character-title > h1 {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+  
+.character-title > i {
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+  
+.character-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+  
+.character-img-wrapper {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.profile-table {
+  grid-column: 2 / span 2;
 }
 
 .character-title > h1 {
@@ -154,6 +113,47 @@ section > h2, main > h2 {
   margin: 0;
   border-bottom: 1px solid #a2a9b1;
   overflow: hidden;
+}
+
+.character-title {
+  grid-column: 1 / span 3;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 650px), 
+(min-resolution: 124.8dpi) {
+  .character-container {
+    width: 88%;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+  }
+
+  .responsive {
+    max-width: 100%;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.33em;
+    padding-left: 0;
+  }
+
+  .name-css {
+    font-size: 1.2em;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .character-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 650px), 
