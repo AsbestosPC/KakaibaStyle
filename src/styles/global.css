@@ -200,6 +200,10 @@ body {
     .wrapper {
       width: 100%;
     }
+
+    main {
+      padding: 1rem;
+    }
   }
   
   @media (min-width: 650px) {
@@ -259,6 +263,11 @@ body {
     .wrapper {
       width: 85%;
     }
+
+    main {
+      width: 70%;
+      margin: auto;
+    }
   }
   
   @media (min-width: 1300px) {
@@ -274,6 +283,11 @@ body {
   
     .wrapper {
       width: 95%;
+    }
+
+    main {
+      width: 60%;
+      margin: auto;
     }
   }
   

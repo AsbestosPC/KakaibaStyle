@@ -149,7 +149,7 @@ section {
   margin-top: 0.5rem;
 }
 
-section > h2 {
+section > h2, main > h2 {
   padding: 1rem 0 0 0;
   margin: 0;
   border-bottom: 1px solid #a2a9b1;
@@ -162,7 +162,6 @@ section > h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
   }
 }
 
@@ -182,8 +181,6 @@ section > h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 200px 350px;
-    width: 70%;
-    margin: auto;
   }
   .character-img-wrapper {
     grid-column: 1 / span 1;
@@ -204,8 +201,6 @@ section > h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 237px 437px;
-    width: 60%;
-    margin: auto;
   }
   .character-img-wrapper {
     grid-column: 1 / span 1;
