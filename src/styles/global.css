@@ -89,15 +89,6 @@ li a {
   text-decoration: none;
 }
 
-span > div {
-  display:  flex;
-  flex-direction:  column;
-}
-
-div > span {
-  background-color: green;
-}
-
 table {
   width: 100%;
   table-layout: fixed;
@@ -142,24 +133,7 @@ footer {
   display: grid;
   justify-items: center;
   margin-bottom: 1rem;
-}
-
-.responsive {
-  height: auto;
-}
-
-.grid-card {
-  margin: 5px;
-}
-
-.card-name {
-  font-weight: bold;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 3rem;
+  gap: 20px;
 }
 
 .wrapper {
@@ -174,10 +148,6 @@ footer {
     grid-template-columns: 50% 50%;
   }
 
-  .responsive {
-    max-width: 100%;
-  }
-
   .logo {
     font-size: 1.5em;
     margin-top: 0.5em;
@@ -186,7 +156,7 @@ footer {
   }
 
   .card-name {
-    font-size: 1.2em;
+    font-size: 1.1rem;
   }
 
   .wrapper {
@@ -213,10 +183,7 @@ footer {
     margin-bottom: 0.33em;
     padding-left: 0;
   }
-  .responsive {
-    width: 100%;
-    max-width: 250px;
-  }
+
   header {
     flex-direction: column;
     justify-content: center;
@@ -248,10 +215,7 @@ footer {
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .responsive {
-    width: 100%;
-    max-width: 300px;
-  }
+
   .wrapper {
     width: 85%;
   }
@@ -267,10 +231,6 @@ footer {
     width: 90%;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-  .responsive {
-    width: 100%;
-    max-width: 250px;
   }
 
   .wrapper {

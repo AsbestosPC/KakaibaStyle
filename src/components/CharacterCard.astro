@@ -4,13 +4,77 @@ const {alt} = Astro.props;
 const {charFirstName} = Astro.props;
 const {url} = Astro.props;
 ---
-<a class="grid-card" href={url}>
-    <span>
-        <div>
-            <img src={thumbnail} alt={alt} class="responsive">
-            <span>
-                <p class="card-name">{charFirstName}</p>
-            </span>
-        </div>
-    </span>
+<a href={url}>
+    <div>
+        <img src={thumbnail} alt={alt}>
+        <span>
+            <p>{charFirstName}</p>
+        </span>
+    </div>
 </a>
+
+<style>
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  position: relative;
+  overflow: hidden;
+}
+
+span { 
+  background-color: green;
+  overflow: hidden;
+  display: block;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-weight: bold;
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-width: 175px;
+}
+
+@media (max-width: 700px), 
+(min-resolution: 124.8dpi) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .responsive {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 950px) {
+  img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1300px) {
+  img {
+    max-width: 300px;
+  }
+}
+
+</style>
