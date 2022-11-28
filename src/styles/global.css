@@ -133,17 +133,15 @@ footer {
   display: grid;
   justify-items: center;
   margin-bottom: 1rem;
-  gap: 20px;
 }
 
 .wrapper {
   width: 85%;
 }
 
-@media (max-width: 650px), 
+@media (max-width: 700px), 
 (min-resolution: 124.8dpi) {
   .character-list {
-    width: 88%;
     margin: auto;
     grid-template-columns: 50% 50%;
   }
@@ -155,10 +153,6 @@ footer {
     padding-left: 0;
   }
 
-  .card-name {
-    font-size: 1.1rem;
-  }
-
   .wrapper {
     width: 100%;
   }
@@ -168,7 +162,7 @@ footer {
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .character-list {
     width: 92%;
     margin: auto;

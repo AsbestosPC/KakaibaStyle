@@ -15,6 +15,10 @@ const {url} = Astro.props;
 
 <style>
 
+a {
+  margin: 1rem;
+}
+
 div {
   display: flex;
   flex-direction: column;
@@ -27,7 +31,6 @@ img {
   max-width: 100%;
   height: auto;
 
-  position: relative;
   overflow: hidden;
 }
 
@@ -35,6 +38,7 @@ span {
   background-color: green;
   overflow: hidden;
   display: block;
+  padding: 2% 0px 2% 0px;
 }
 
 div {
@@ -49,31 +53,52 @@ p {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  min-width: 175px;
+  padding-left: 50px;
 }
 
 @media (max-width: 700px), 
 (min-resolution: 124.8dpi) {
   p {
-    font-size: 1.1rem;
+    font-size: 3.5vw;
+  }
+  span {
+    padding: 4% 0px 4% 0px;
   }
 }
 
-@media (max-width: 950px) {
-  .responsive {
+@media (min-width: 700px) {
+  p {
+    font-size: 2vw;
+    padding-left: 25px;
+  }
+  img {
     max-width: 250px;
+  }
+  span {
+    padding: 4% 0px 4% 0px;
   }
 }
 
 @media (min-width: 950px) {
+  p {
+    font-size: 1.45vw;
+    padding-left: 50px;
+  }
   img {
-    max-width: 250px;
+    max-width: 300px;
+  }
+  span {
+    padding: 3% 0px 3% 0px;
   }
 }
 
 @media (min-width: 1300px) {
+  p {
+    font-size: 1.25vw;
+    padding-left: 50px;
+  }
   img {
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 
