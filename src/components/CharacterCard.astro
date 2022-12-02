@@ -23,6 +23,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 250px;
 }
 
 img {
@@ -50,16 +51,17 @@ p {
   font-weight: bold;
   font-size: 2vw;
   text-transform: uppercase;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 50px;
+  overflow: hidden;
+  padding-left: 0.35vw;
 }
 
 @media (max-width: 700px), 
 (min-resolution: 124.8dpi) {
   p {
     font-size: 3.5vw;
+    padding-left: 1.2vw;
   }
   span {
     padding: 4% 0px 4% 0px;
@@ -69,9 +71,9 @@ p {
 @media (min-width: 700px) {
   p {
     font-size: 2vw;
-    padding-left: 25px;
+    padding-left: 0.9vw;
   }
-  img {
+  div {
     max-width: 250px;
   }
   span {
@@ -82,10 +84,10 @@ p {
 @media (min-width: 950px) {
   p {
     font-size: 1.45vw;
-    padding-left: 50px;
+    padding-left: 0.5vw;
   }
-  img {
-    max-width: 300px;
+  div {
+    max-width: 250px;
   }
   span {
     padding: 3% 0px 3% 0px;
@@ -94,10 +96,10 @@ p {
 
 @media (min-width: 1300px) {
   p {
-    font-size: 1.25vw;
-    padding-left: 50px;
+    font-size: 1.05vw;
+    padding-left: 0.35vw;
   }
-  img {
+  div {
     max-width: 250px;
   }
 }
