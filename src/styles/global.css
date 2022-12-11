@@ -165,7 +165,7 @@ footer {
 
 @media (min-width: 700px) {
   .character-list {
-    width: 92%;
+    /* width: 92%; */
     margin: auto;
 
   }
@@ -206,7 +206,7 @@ footer {
 
 @media (min-width: 950px) {
   .character-list {
-    width: 95%;
+    /* width: 95%; */
     margin: auto;
   }
 
@@ -222,7 +222,7 @@ footer {
 
 @media (min-width: 1300px) {
   .character-list {
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     grid-template-columns: repeat(5, 1fr);
   }

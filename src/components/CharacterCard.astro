@@ -1,14 +1,14 @@
 ---
 const {thumbnail} = Astro.props;
 const {alt} = Astro.props;
-const {charFirstName} = Astro.props;
+const {character} = Astro.props;
 const {url} = Astro.props;
 ---
 <a href={url}>
     <div>
         <img src={thumbnail} alt={alt}>
         <span>
-            <p>{charFirstName}</p>
+            <p>{character}</p>
         </span>
     </div>
 </a>
@@ -70,7 +70,7 @@ p {
 
 @media (min-width: 700px) {
   p {
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding-left: 0.9vw;
   }
   div {
@@ -83,7 +83,7 @@ p {
 
 @media (min-width: 950px) {
   p {
-    font-size: 1.45vw;
+    font-size: 1.75vw;
     padding-left: 0.5vw;
   }
   div {
@@ -96,7 +96,7 @@ p {
 
 @media (min-width: 1300px) {
   p {
-    font-size: 1.05vw;
+    font-size: 1.25vw;
     padding-left: 0.35vw;
   }
   div {
