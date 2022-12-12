@@ -6,11 +6,11 @@ const {url} = Astro.props;
 ---
 <a href={url} class="hidden">
     <div class="card-wrapper">
-        <div>
+        <div class="img-wrapper">
           <img src={thumbnail} alt={alt}>
         </div>
         <span>
-            <p>{character}</p>
+          <p>{character}</p>
         </span>
     </div>
 </a>
@@ -27,54 +27,55 @@ const {url} = Astro.props;
 }
 
 a {
-  margin: 1rem;
   text-decoration: none;
+  /* margin: 10px; */
 }
 
-div {
+.card-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 250px;
+  max-width: 234px;
+}
+
+.img-wrapper {
   overflow: hidden;
+  border: solid 0px 0px 1px 0px grey;
 }
 
 img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   border-style: none;
   transition: transform 0.2s; /* Animation */
   overflow: hidden;
   z-index: 1;
+  object-fit: cover;
 }
 
 .card-wrapper:hover img {
-  transform: scale(1.05);
+  transform: scale3d(1.05, 1.05, 1);
 }
 
 span { 
   background-color: green;
   overflow: hidden;
   display: block;
-  padding: 2% 0px 2% 0px;
-}
-
-div {
-  display: flex;
-  flex-direction: column;
+  /* padding: 0px 0px 2% 0px; */
 }
 
 p {
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 12px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
   overflow: hidden;
   padding-left: 0.35vw;
   transition-duration: 0.2s;
+  white-space: nowrap;
 }
 
 .card-wrapper:hover p {
@@ -98,9 +99,6 @@ p {
     font-size: 2.5vw;
     padding-left: 0.9vw;
   }
-  div {
-    max-width: 250px;
-  }
   span {
     padding: 4% 0px 4% 0px;
   }
@@ -111,9 +109,6 @@ p {
     font-size: 1.75vw;
     padding-left: 0.5vw;
   }
-  div {
-    max-width: 250px;
-  }
   span {
     padding: 3% 0px 3% 0px;
   }
@@ -123,9 +118,6 @@ p {
   p {
     font-size: 1.25vw;
     padding-left: 0.35vw;
-  }
-  div {
-    max-width: 250px;
   }
 }
 

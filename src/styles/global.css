@@ -134,26 +134,18 @@ footer {
   display: grid;
   justify-items: center;
   margin-bottom: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(234px, 1fr));
+  gap: 10px;
 }
 
 .wrapper {
-  width: 85%;
+  width: 100%;
+  /* margin: 20px; */
 }
-
-/* .hidden {
-  opacity: 0;
-  transition: all 0.4s;
-}
-
-.show {
-  opacity: 1;
-} */
 
 @media (max-width: 700px), 
 (min-resolution: 124.8dpi) {
   .character-list {
-    margin: auto;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -164,20 +156,12 @@ footer {
     padding-left: 0;
   }
 
-  .wrapper {
-    width: 100%;
-  }
+  /* .wrapper {
+    width: 90%;
+  } */
 
   main {
     padding: 1rem;
-  }
-}
-
-@media (min-width: 700px) {
-  .character-list {
-    /* width: 92%; */
-    margin: auto;
-
   }
 }
 
@@ -215,14 +199,10 @@ footer {
 }
 
 @media (min-width: 950px) {
-  .character-list {
-    /* width: 95%; */
-    margin: auto;
-  }
 
-  .wrapper {
+  /* .wrapper {
     width: 85%;
-  }
+  } */
 
   main {
     width: 70%;
@@ -230,15 +210,14 @@ footer {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1350px) {
   .character-list {
-    /* width: 90%; */
-    margin: auto;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(260px, 1fr));
   }
 
   .wrapper {
     width: 95%;
+    margin: auto;
   }
 
   main {
