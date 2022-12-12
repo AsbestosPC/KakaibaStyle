@@ -5,8 +5,10 @@ const {character} = Astro.props;
 const {url} = Astro.props;
 ---
 <a href={url}>
-    <div>
-        <img src={thumbnail} alt={alt}>
+    <div class="card-wrapper">
+        <div>
+          <img src={thumbnail} alt={alt}>
+        </div>
         <span>
             <p>{character}</p>
         </span>
@@ -24,6 +26,7 @@ div {
   flex-direction: column;
   justify-content: center;
   max-width: 250px;
+  overflow: hidden;
 }
 
 img {
@@ -31,8 +34,13 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
-
+  border-style: none;
+  transition: transform 0.2s; /* Animation */
   overflow: hidden;
+}
+
+.card-wrapper:hover img {
+  transform: scale(1.05);
 }
 
 span { 
@@ -55,6 +63,12 @@ p {
   margin-bottom: 0;
   overflow: hidden;
   padding-left: 0.35vw;
+  transition-duration: 0.2s;
+}
+
+.card-wrapper:hover p {
+  padding-left: 15px;
+  transition-duration: 0.2s;
 }
 
 @media (max-width: 700px), 
