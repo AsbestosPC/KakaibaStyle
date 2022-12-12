@@ -1,13 +1,12 @@
 ---
 import '../styles/global.css';
+import Head from '../components/Head.astro';
+const {title} = Astro.props;
 ---
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kakaiba Style</title>
-</head>
+<Head title={title}>
+</Head>
 <body class="light" onload="checkDarkMode()">
   <header class="light" id="header">
     <div class="logo"><a href="/">Kakaiba Style</a></div>

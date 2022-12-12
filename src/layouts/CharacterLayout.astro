@@ -6,7 +6,7 @@ import TableRow from '../components/TableRow.astro';
 import '../styles/characters.css';
 ---
 
-<SiteLayout>
+<SiteLayout title={frontmatter.character}>
   <main class="character-main light">
         <div class="character-title">
           <h1>{frontmatter.character}</h1>

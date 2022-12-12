@@ -7,7 +7,7 @@ const allCharacters = await Astro.glob('../pages/characters/*.md');
 
 import '../styles/global.css';
 ---
-<SiteLayout>
+<SiteLayout title="Kakaiba Style">
   <div class="character-list">
     {allCharacters.map((post) => 
         <CharacterCard thumbnail={post.frontmatter.thumbnail} 
