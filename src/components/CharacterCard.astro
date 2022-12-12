@@ -4,7 +4,7 @@ const {alt} = Astro.props;
 const {character} = Astro.props;
 const {url} = Astro.props;
 ---
-<a href={url}>
+<a href={url} class="hidden">
     <div class="card-wrapper">
         <div>
           <img src={thumbnail} alt={alt}>
@@ -17,8 +17,18 @@ const {url} = Astro.props;
 
 <style>
 
+.hidden {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.show {
+  opacity: 1;
+}
+
 a {
   margin: 1rem;
+  text-decoration: none;
 }
 
 div {
@@ -37,6 +47,7 @@ img {
   border-style: none;
   transition: transform 0.2s; /* Animation */
   overflow: hidden;
+  z-index: 1;
 }
 
 .card-wrapper:hover img {

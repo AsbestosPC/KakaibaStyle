@@ -1,5 +1,16 @@
 let darkModeEnbaled = false
 
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('show');
+		} 
+	});
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
 // replace all instances of class "light" with "dark"
 function darkMode() {
 	let elements = document.querySelectorAll('.light')
